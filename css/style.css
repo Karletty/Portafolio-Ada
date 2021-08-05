@@ -427,3 +427,33 @@ a:focus {
   font-weight: 600;
   font-size: 16px;
 }
+.footer {
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav .nav {
+  display: flex;
+  font-size: 14px;
+  margin: 25px 0 30px;
+}
+.footer-nav .nav-item {
+  padding: 0;
+}
+.footer-nav .nav-link {
+  padding: 10px;
+}
+.footer-nav .nav-link:active {
+  box-shadow: 0 0 7px 0 var(--shadow-color1);
+}
+.footer .social-icon {
+  background-color: var(--secondary-color);
+  margin-bottom: 45px;
+}
+.footer .social-icon:hover {
+  background-color: var(--aditional-color1);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}

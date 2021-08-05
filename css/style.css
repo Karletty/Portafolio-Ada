@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+  }
+  :root {
+    --main-color: #151528;
+    --secondary-color: #e2e2e2;
+    --third-color: rgba(0, 0, 0, 0.35);
+    --aditional-color1: #0e7ff3;
+    --shadow-color1: #99ffff;
+    --valid-color: #2dd86f;
+    --invalid-color: #e72d2d;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 1em;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    background-color: var(--main-color);
+    color: #ffffff;
+    overflow-y: hidden;
+  }
+  .page::-webkit-scrollbar {
+    width: 1vw;
+  }
+  .page::-webkit-scrollbar-track {
+    background: #124a8e;
+  }
+  .page::-webkit-scrollbar-thumb {
+    background: #b5b1b2;
+    border-left: 0.2vw solid #124a8e;
+    border-right: 0.2vw solid #124a8e;
+  }
+  .page {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    overflow-x: hidden;
+  }
+  .nav-container {
+    box-shadow: 0 0 29px var(--aditional-color1);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .header-nav {
+    width: 1100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-nav .nav {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item {
+    list-style: none;
+    border-radius: 30px;
+    margin: 0 5px;
+    padding: 10px 17px;
+  }
+  .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: var(--secondary-color);
+    padding: 10px 17px;
+    border-radius: 30px;
+    margin: 0 5px;
+  }
+  .header-nav .nav-link:hover {
+    color: var(--aditional-color1);
+  }
+  .header-nav .nav-link:active {
+    box-shadow: 0 0 7px 0 var(--aditional-color1);
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .mini-presentation-container {
+    min-height: calc(100vh - 90px);
+    padding: 13vw 10vw 130px;
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
+  .mini-presentation {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    pointer-events: initial;
+  }
+  .mini-presentation .greeting {
+    color: var(--secondary-color);
+    font-size: clamp(30px, 5vw, 45px);
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }

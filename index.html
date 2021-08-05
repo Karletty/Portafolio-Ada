@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Karletty Elías</title>
-    <script src="https://kit.fontawesome.com/b711723059.js" crossorigin="anonymous"></script>
-
     <script src="https://kit.fontawesome.com/b711723059.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/icon" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
@@ -58,7 +56,6 @@
                 <img class="developer-img" src="images/developer.svg" alt="developer">
             </section>
         </header>
-
         <!--main-->
         <main class="main">
             <!--sección de habilidades-->
@@ -139,7 +136,6 @@
                     </div>
                 </div>
             </section>
-
             <!--sección de cita-->
             <section class="quote-container" aria-label="sección de cita">
                 <i class="fas fa-quote-right quote-icon"></i>
@@ -186,6 +182,75 @@
                             class="project-img">
                         <h3 class="project-name">Buscador de películas</h3>
                     </a>
+                </div>
+            </section>
+            <!--sección de contacto-->
+            <section id="contact">
+                <div class="contact-container">
+                    <div class="contact">
+                        <h2 class="section-title">Contactame</h2>
+                        <p class="description">Puedes ponerte en contacto conmigo a través de mis redes sociales a
+                            continuación</p>
+                        <div class="social-media" aria-label="Twitter">
+                            <div class="twitter link-container">
+                                <a href="https://twitter.com/elias_karletty" class="social-link" target="_BLANK">
+                                    <i class="fab fa-twitter social-icon"></i>@elias_karletty
+                                </a>
+                            </div>
+                            <div class="linkedin link-container" aria-label="Linkedin">
+                                <a href="https://www.linkedin.com/in/karletty-carolina-el%C3%ADas-p%C3%A9rez-2b0409210/"
+                                    class="social-link" target="_BLANK">
+                                    <i class="fab fa-linkedin-in social-icon"></i>Karletty Carolina Elías Pérez
+                                </a>
+                            </div>
+                            <div class="github link-container" aria-label="Github">
+                                <a href="https://github.com/Karletty" class="social-link" target="_BLANK">
+                                    <i class="fab fa-github-alt social-icon"></i>Karletty
+                                </a>
+                            </div>
+                            <div class="mail link-container" aria-label="Correo">
+                                <a href="mailto:karletty.carolina@gmail.com" class="social-link" target="_BLANK">
+                                    <i class="fas fa-envelope social-icon"></i>karletty.carolina@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="write-mail">
+                        <h2 class="section-title">Escribime</h2>
+                        <form action="" class="mail-form">
+                            <fieldset class="full-name">
+                                <div class="input-container">
+                                    <label for="firstname" class="label">Nombre*</label>
+                                    <input type="text" name="nombre" id="firstname" class="name-input input"
+                                        placeholder="p. ej.:Ada" required>
+                                    <i class="far fa-check-circle input-icon valid-icon" aria-hidden="true"></i>
+                                    <i class="far fa-times-circle input-icon invalid-icon" aria-hidden="true"></i>
+                                </div>
+                                <div class="input-container">
+                                    <label for="lastname" class="label">Apellido*</label>
+                                    <input type="text" name="apellido" id="lastname" class="input"
+                                        placeholder="p. ej.:Lovelace" required>
+                                    <i class="far fa-check-circle input-icon valid-icon" aria-hidden="true"></i>
+                                    <i class="far fa-times-circle input-icon invalid-icon" aria-hidden="true"></i>
+                                </div>
+                            </fieldset>
+                            <div class="input-container">
+                                <label for="email" class="label">Email*</label>
+                                <input type="email" name="correo" id="email" class="input"
+                                    placeholder="p. ej.:ada.lovelace@gmail.com" required>
+                                <i class="far fa-check-circle input-icon valid-icon" aria-hidden="true"></i>
+                                <i class="far fa-times-circle input-icon invalid-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="input-container">
+                                <label for="message" class="label">Mensaje*</label>
+                                <textarea id="message" class="input textarea" required
+                                    placeholder="Escriba un mensaje aquí"></textarea>
+                                <i class="far fa-check-circle input-icon valid-icon" aria-hidden="true"></i>
+                                <i class="far fa-times-circle input-icon invalid-icon" aria-hidden="true"></i>
+                            </div>
+                            <input type="submit" value="Enviar" class="send-btn">
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>

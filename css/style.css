@@ -291,3 +291,139 @@ section .description {
   max-height: 230px;
   margin-bottom: 35px;
 }
+.contact,
+.write-mail {
+  width: 50%;
+  min-width: 331px;
+}
+.contact-container {
+  display: flex;
+  text-align: left;
+  padding: 25px 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  border: 2px solid #353564;
+}
+.contact-container .section-title {
+  margin: 65px 0 30px;
+}
+.contact .description {
+  text-align: start;
+}
+.link-container {
+  margin-bottom: 15px;
+}
+.social-link {
+  padding: 20px 10px;
+  height: 100%;
+  border-radius: 35px;
+}
+.link-container:hover .social-link {
+  color: var(--shadow-color1);
+  text-shadow: 0 0px 50px var(--aditional-color1);
+}
+.social-link,
+.social-link:visited,
+.project,
+.project:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.social-icon {
+  color: var(--aditional-color1);
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.5s;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  line-height: 2.3;
+  text-align: center;
+}
+.link-container:hover .social-icon {
+  background-color: var(--aditional-color1);
+  color: var(--secondary-color);
+  text-shadow: 0 0px 50px var(--shadow-color1);
+}
+.write-mail {
+  padding-left: 20px;
+}
+.mail-form {
+  display: flex;
+  flex-direction: column;
+}
+.full-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.full-name .input-container {
+  width: 50%;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.full-name .input-container:first-of-type {
+  margin-right: 25px;
+}
+.input-container .label {
+  margin-bottom: 10px;
+}
+.input {
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 16px;
+  width: 100%;
+}
+.input:valid {
+  border: 3px solid var(--valid-color);
+  --aditional-color1: var(--valid-color);
+}
+.input:invalid:not(:placeholder-shown) {
+  border: 3px solid var(--invalid-color);
+  --aditional-color1: var(--invalid-color);
+}
+.input:focus,
+a:focus {
+  box-shadow: 0 0 29px var(--aditional-color1);
+}
+.textarea {
+  height: 174px;
+}
+.input-icon {
+  position: absolute;
+  display: none;
+  top: 33px;
+  right: 20px;
+  transform: translateY(50%);
+}
+.valid-icon {
+  color: var(--valid-color);
+}
+.invalid-icon {
+  color: var(--invalid-color);
+}
+.input:valid + .valid-icon {
+  display: flex;
+}
+.input:invalid:not(:placeholder-shown) + .input-icon ~ .invalid-icon {
+  display: flex;
+}
+.send-btn {
+  width: 130px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--aditional-color1);
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
